@@ -1,104 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ESI Web3 Studio — STRswap</title>
-
+    <meta charset="UTF-8">
+    <title>ESI Web3 Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0d0d0d;
-            color: #fff;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: #050816;
+            color: #f5f5f5;
         }
-
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px 16px 40px;
+        }
         header {
-            padding: 40px 20px;
             text-align: center;
-            background: linear-gradient(135deg, #111, #1a1a1a);
+            padding: 32px 0 24px;
         }
-
+        header img {
+            display: block;
+            margin: 0 auto 16px;
+        }
         h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-            color: #00c3ff;
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
         }
-
-        h2 {
-            color: #00c3ff;
+        header p {
+            margin-top: 8px;
+            color: #b0b0b0;
+            font-size: 0.95rem;
         }
-
-        p {
-            font-size: 18px;
-            opacity: 0.9;
-        }
-
         .section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 14px;
+            padding: 18px 16px;
+            margin-top: 16px;
+            border: 1px solid rgba(148, 163, 184, 0.25);
         }
-
+        .section h2 {
+            margin: 0 0 8px;
+            font-size: 1.1rem;
+        }
+        .section p {
+            margin: 0;
+            color: #cbd5f5;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .list {
+            margin-top: 8px;
+            padding-left: 18px;
+            color: #cbd5f5;
+            font-size: 0.95rem;
+        }
+        .list li {
+            margin-bottom: 4px;
+        }
         .btn {
             display: inline-block;
-            padding: 12px 22px;
-            margin-top: 20px;
-            background: #00c3ff;
-            color: #000;
-            font-weight: bold;
-            border-radius: 8px;
+            margin-top: 12px;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: #22c55e;
+            color: #020617;
             text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
         }
-
         .btn:hover {
-            background: #00a8dd;
+            background: #16a34a;
         }
-
         footer {
+            margin-top: 28px;
             text-align: center;
-            padding: 20px;
-            opacity: 0.6;
-            font-size: 14px;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+        a {
+            color: #38bdf8;
         }
     </style>
 </head>
-
 <body>
+<div class="container">
+    <header>
+        <!-- لوگو از ریپوی تو -->
+        <img src="logo.svg" width="120" alt="ESI Web3 Studio Logo">
+        <h1>ESI Web3 Studio</h1>
+        <p>Smart Contracts • Token Launch Architecture • Secure Web3 Solutions</p>
+    </header>
 
-<header>
-    <h1>ESI Web3 Studio</h1>
-    <p>Smart Contracts • Token Launch • Secure Web3 Solutions</p>
-</header>
+    <div class="section">
+        <h2>About</h2>
+        <p>
+            ESI Web3 Studio is a focused Web3 development studio delivering secure, fast and clean
+            blockchain solutions with a minimal, professional approach.
+        </p>
+    </div>
 
-<div class="section">
-    <h2>About ESI Web3 Studio</h2>
-    <p>
-        ESI Web3 Studio provides premium blockchain development services including smart contracts,
-        token creation, launch architecture, branding, and secure Web3 solutions for global clients.
-    </p>
+    <div class="section">
+        <h2>Services</h2>
+        <ul class="list">
+            <li>Smart contract design & deployment (BNB Chain & EVM)</li>
+            <li>Token launch architecture & basic tokenomics implementation</li>
+            <li>Secure contract verification and deployment workflows</li>
+            <li>Lightweight Web3 landing pages for tokens and dApps</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Community</h2>
+        <p>Join the official Telegram channel for updates and collaboration:</p>
+        <a class="btn" href="https://t.me/ESIWeb3Studio" target="_blank">
+            Join Telegram
+        </a>
+    </div>
+
+    <footer>
+        © 2026 ESI Web3 Studio — Minimal, secure and focused Web3 development.
+    </footer>
 </div>
-
-<div class="section">
-    <h2>STRswap Token</h2>
-    <p>
-        STRswap is a secure and verified token deployed on BNB Chain.  
-        Contract is fully verified on BscScan and ready for integration.
-    </p>
-
-    <a class="btn" href="https://bscscan.com" target="_blank">View on BscScan</a>
-</div>
-
-<div class="section">
-    <h2>Join Our Community</h2>
-    <p>Stay updated with the latest development, launches and Web3 services.</p>
-
-    <a class="btn" href="https://t.me/ESIWeb3Studio" target="_blank">Telegram Channel</a>
-</div>
-
-<footer>
-    © 2026 ESI Web3 Studio — All Rights Reserved
-</footer>
-
 </body>
 </html>
